@@ -1,3 +1,14 @@
+function reduceNumber(num) {
+  var str = String(num).split('');
+  return(Number(str[0]) + Number(str[1]));
+}
+
+function sumNumbers(numArr) {
+  return numArr.reduce(function(sum, value) {
+    return sum + value;
+  });
+}
+
 var check = function(cc) {
   var num = cc.split('').map(Number);
   var products = [];
@@ -19,16 +30,5 @@ var check = function(cc) {
     return false;
   }
 };
-
-function reduceNumber(num) {
-  var str = String(num).split('');
-  return(Number(str[0]) + Number(str[1]));
-}
-
-function sumNumbers(numArr) {
-  return numArr.reduce(function(sum, value) {
-    return sum + value;
-  });
-}
 
 module.exports = check;
