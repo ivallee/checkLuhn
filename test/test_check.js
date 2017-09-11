@@ -1,5 +1,8 @@
 var assert = require('chai').assert;
-var check = require('../check.js');
+var methods = require('../check.js');
+var check = methods.check;
+var sum = methods.sum;
+var reduce = methods.reduce
 
 describe("Checks if number Valid", function() {
   it("Should return true if number is valid", function() {

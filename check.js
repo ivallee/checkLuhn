@@ -9,7 +9,7 @@ function sumNumbers(numArr) {
   });
 }
 
-var check = function(cc) {
+var checkLuhn = function(cc) {
   var num = cc.split('').map(Number);
   var products = [];
   for (var i = num.length - 1; i >= 0; i--) {
@@ -31,4 +31,9 @@ var check = function(cc) {
   }
 };
 
-module.exports = check;
+module.exports = {
+  check: checkLuhn,
+  sum: sumNumbers,
+  reduce: reduceNumber
+}
+
